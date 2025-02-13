@@ -14,13 +14,15 @@
         <div class="mt-8 bg-white p-6 shadow-md rounded-lg">
             <h2 class="text-2xl font-semibold text-gray-800">Cadastre-se para o Acesso Antecipado</h2>
             <p class="mt-2 text-gray-600">Seja um dos primeiros a testar a ferramenta.</p>
-            <form class="mt-4" action="https://formspree.io/f/{seu-endereco}" method="POST">
+            <form class="mt-4" action="https://formspree.io/f/mldgwoad" method="POST">
                 <input type="text" name="name" placeholder="Seu Nome" required 
                     class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-green-500">
                 <input type="email" name="email" placeholder="Seu E-mail" required
                     class="w-full px-4 py-2 mt-3 border rounded-lg focus:outline-none focus:ring focus:border-green-500">
                 <button type="submit"
-                    class="w-full mt-4 bg-green-500 text-white py-2 rounded-lg font-semibold hover:bg-green-600">Quero Testar 🚀</button>
+                    class="w-full mt-4 bg-green-500 text-white py-2 rounded-lg font-semibold hover:bg-green-600">
+                    Quero Testar 🚀
+                </button>
             </form>
         </div>
 
@@ -36,9 +38,34 @@
         <div class="mt-10 text-center">
             <h2 class="text-2xl font-bold text-gray-800">Aproveite a Pré-Venda!</h2>
             <p class="mt-2 text-gray-600">Garanta acesso exclusivo por apenas <strong>R$12,90/mês</strong>.</p>
-           <p class="mt-2 text-gray-600">Apenas <strong>18 vagas</strong> restantes!</p>
-            <a href="#" class="mt-4 inline-block bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700">Comprar Agora 🚀</a>
+            <button onclick="document.getElementById('pre-venda-modal').classList.remove('hidden');"
+                class="mt-4 inline-block bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700">
+                Comprar Agora 🚀
+            </button>
         </div>
     </div>
+
+    <!-- Modal de Captura -->
+    <div id="pre-venda-modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm text-center">
+            <h2 class="text-xl font-bold text-gray-800">Ainda não estamos vendendo</h2>
+            <p class="mt-2 text-gray-600">Cadastre-se para ser notificado quando a pré-venda for liberada!</p>
+            <form class="mt-4" action="https://formspree.io/f/mldgwoad" method="POST">
+                <input type="text" name="name" placeholder="Seu Nome" required 
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-green-500">
+                <input type="email" name="email" placeholder="Seu E-mail" required
+                    class="w-full px-4 py-2 mt-3 border rounded-lg focus:outline-none focus:ring focus:border-green-500">
+                <button type="submit"
+                    class="w-full mt-4 bg-green-500 text-white py-2 rounded-lg font-semibold hover:bg-green-600">
+                    Quero ser notificado 🚀
+                </button>
+            </form>
+            <button onclick="document.getElementById('pre-venda-modal').classList.add('hidden');"
+                class="mt-4 text-gray-500 hover:underline">Fechar</button>
+        </div>
+    </div>
+</body>
+</html>
+
 </body>
 </html>
